@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background: linear-gradient(45deg, #ac14c0,#b6dd27, #e21515);
+    max-width: 1920px;
+    height: calc(100dvh - 10rem)
+}
+
+.jogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+
+    margin-top: 10rem;
+    padding: 1rem;
+    margin-left: 35%;
+    margin-right: 35%;
+    /*border: 1px solid;*/
+    border-radius: 12px;
+    background-color: rgba(201, 201, 201, 0.6);
+    box-shadow: 2px 1px 5px 1px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: "Jersey 10", sans-serif;
+    margin: 2rem;
+    background-color: rgba(255, 255, 255, 0.3);
+
+    border-radius: 12px;
+    & h1 {
+        font-weight: 100;
+        font-size: 4rem;
+    }
+    & .subtitle {
+        background-color: rgba(204, 203, 203, 0.3);
+        border-radius: 12px;
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        & h3 {
+            font-size: large;
+            font-weight: 100;
+            font-size: 2rem;
+        }
+    }
+
+}
+
+
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    
+    & button {
+        width: 96px;
+        height: 96px;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 2px groove rgb(151, 151, 151);
+        &:hover, &:active {
+            background-color: rgb(179, 177, 177);
+        }
+
+        & img {
+            width: 64px;
+            height: auto;
+        }
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(182, 165, 134);
+    background-color:  wheat;
+    border-radius: 12px;
+
+    margin-left: 10%;
+    margin-right: 10%;
+
+    
+    font-family: "Inter", sans-serif;
+    padding: 1rem;
+}
+
+#reset {
+    padding: 10px;
+    margin: 10px;
+
+    background-color: azure;
+    border-style: none;
+    border: 1px solid rgb(175, 189, 189);
+    border-radius: 12px;
+    cursor: pointer;
+
+    font-family: "Inter", sans-serif;
+    &:hover {
+        background-color: rgb(240, 231, 231);
+    }
+}
+
+footer {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-size: x-large;
+    text-align: center;
+    margin: 10px auto;
+    max-width: 576px;
+    background-color: rgba(201, 201, 201, 0.2);
+    border-radius: 12px;
+    border: 3px groove rgba(26, 26, 26, 0.2);
+
+    & a {
+        text-decoration: none;
+        & img {
+            border-radius: 50%;
+            height: 40px;
+        }
+    }
+}
+
+@media screen and (max-width:500px) and (max-height:1000px) {
+    body {
+        height: calc(100dvh - 2rem)
+    }
+    
+    .options {
+        & button {
+            width: 64px;
+            height: 64px;
+        }
+        & img {
+            width: 32px !important;
+            height: 32px !important;
+        }
+    }
+    .jogo {
+        margin: 1rem;
+        margin-top: 15%;
+    }
+
+}
+
+@media screen and (max-width:1000px) and (max-height:1500px) {
+    body {
+        height: calc(100dvh - 2rem)
+    }
+    
+    .options {
+        & button {
+            width: 80px;
+            height: 80px;
+        }
+        & img {
+            width: 48px !important;
+            height: 48px !important;
+        }
+    }
+    .jogo {
+        margin: 10px;
+        margin-top: 15%;
+    }
+    
+}
