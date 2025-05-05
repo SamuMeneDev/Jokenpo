@@ -1,7 +1,7 @@
 # 🗂️ JOKENPO
 Um jogo de jokempo (Pedra, Papel e Tesoura). <strong>Espero que goste :D, abraços <a href="https://github.com/SamuMeneDev" target="_blank">Samu Mene</a>.</strong>
 
-### Link do site: <a href="#"></a>
+### Link do site: <a href="https://samumenedev.github.io/Jokenpo/">Jokenpo Web</a>
 
 ## ⚙️ Tecnologias Usadas
 <div><img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="HTML" style="width:25px;">
